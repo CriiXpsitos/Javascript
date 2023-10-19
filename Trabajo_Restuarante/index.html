@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurnte</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante ADSO</title>
 </head>
 <body>
-    <H1 style="text-align:center;">Restaurante ADSO</H1>
-    <main class="contenedor">
-        <div class="imagen__menu">
-            <img src="Menu.jpg" alt="Menu">
-        </div>
-        <div class="caja">
-            <input type="number" id="n1" class="form-control"
-            placeholder="Numero 1"/> <br/> 
-            <input type="number" id="n2" class="form-control"
-            placeholder="Numero 2"/> <br/> 
-            
-            <div class="opciones">
-                <select class="form-select" aria-label="Defaul select example" id="opc">
-                    <option selected>Plato Principal</option>
-                    <option value="1">Plato 1</option>
-                    <option value="2">Plato 2</option>
-                    <option value="3">Plto 3</option>
-                    <option value="4">Plato 4</option>
-                    <option value="5">Plato 5</option>
-                </select>
-            </div>
-            <div>
-                <select class="form-select" aria-label="Defaul select example" id="opc">
-                    <option selected>opcion</option>
-                    <option value="1">Bebida 1</option>
-                    <option value="2">Bebida 2</option>
-                    <option value="3">Bebida 3</option>
-                    <option value="4">Bebida 4</option>
-                    <option value="5">Bebida 5</option>
-                </select>
-            </div>
-            
-    
-        <br>
-            <button class = "boton" onclick = "mostrar()">Mostrar Valor</button>
-    </main>
-    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
-        <strong id="resultado"></strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"
-        aria-label="close"></button>
-    </div>
-    </div>
-    
+  <H1 style="text-align:center;">Restaurante ADSO</H1>
+  <main class="contenedor">
+    <div class="caja">
+      <select class="form-select" aria-label="Plato Principal" id="platoSeleccionado">
+        <option selected">Seleccionar Plato</option>
+        <option value="1">Espaguetis</option>
+        <option value="2">Pizza</option>
+        <option value="3">Hamburguesa</option>
+        <option value="4">Ensalada</option>
+        <option value="5">Sandwich</option>
+      </select>
 
+      <select class="form-select" aria-label="Bebida" id="bebidaSeleccionada">
+        <option selected>Seleccionar Bebida</option>
+        <option value="1">Agua</option>
+        <option value="2">Jugo</option>
+        <option value="3">Refresco</option>
+        <option value="4">Café</option>
+        <option value="5">Té</option>
+      </select>
 
-    <script src="app.js"></script>
+      <input type="number" id="cantidad" class="form-control" placeholder="Cantidad"/>
+
+      <br>
+      <button class="boton" onclick="mostrar()">Mostrar Valor</button>
+    </div>
+  </main>
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+    <strong id="resultado"></strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
