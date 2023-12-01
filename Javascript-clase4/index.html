@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Biblioteca</title>
+    <title>Contador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
-    <header class="header">
-        <div class="contenedor">
-            <div class="barra">
-                <a href="#" class="Logo"><H1 class="navegacion__titulo">Biblioteca<span class="navegacion__span">Sena</span></H1></a>
-                <nav class="navegacion">
-                    <a class = "navegacion__enlace" href="#">Inicio</a>
-                    <a class = "navegacion__enlace" href="#">libros</a>
-                    <a class = "navegacion__enlace" href="#">Categorias</a>
-                    <a class = "navegacion__enlace" href="#">Acerca de Nosotros</a>
+   <div class="contenedor">
+    <p class="titulo">Contador</p>
+    <p class="contar" id="contar">0</p>
 
-                </nav>
-            </div>
-        </div>
-    </header>
-    
+    <div class="botones">
+        <button class="incr" id="incr">+</button>
+        <button class="decr" id="decr">-</button>
+        <button class="reset" id="reset">reset</button>
+    </div>
+   </div> 
 </body>
+<script src="./js/app.js"></script>
 </html>
